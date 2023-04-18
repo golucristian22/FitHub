@@ -1,5 +1,5 @@
-import Nav from "../../components/navigation/navigation-component";
-import LoginForm from "../../components/forms/login-from/login-form-component";
+import Nav from "../../components/organisms/navigation/navigation-component";
+import LoginForm from "../../components/molecules/forms/login-from/login-form-component";
 
 function Login() {
   return (

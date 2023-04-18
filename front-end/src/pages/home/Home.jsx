@@ -1,4 +1,4 @@
-import Nav from "../../components/navigation/navigation-component";
+import Nav from "../../components/organisms/navigation/navigation-component";
 
 function Home() {
   return (

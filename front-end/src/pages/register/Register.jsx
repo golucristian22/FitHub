@@ -1,5 +1,5 @@
-import Nav from "../../components/navigation/navigation-component";
-import RegisterForm from "../../components/forms/register-form/register-form-component";
+import Nav from "../../components/organisms/navigation/navigation-component";
+import RegisterForm from "../../components/molecules/forms/register-form/register-form-component";
 
 function Register() {
   return (

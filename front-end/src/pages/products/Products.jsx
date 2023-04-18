@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Nav from "../../components/navigation/navigation-component";
-import Product from "../../components/product/product-component";
+import Nav from "../../components/organisms/navigation/navigation-component";
+import Product from "../../components/molecules/product/product-component";
 import "./products-styles.css";
 
 function Products() {
