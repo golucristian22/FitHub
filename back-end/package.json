@@ -1,0 +1,18 @@
+{
+  "name": "fit_hub",
+  "version": "1.0.0",
+  "description": "Fit_Hub Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Golu Cristian",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,71 @@
+@import "./typography.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: var(--font-family-heading);
+}
+
+h1, .h1 { 
+  font-size: var(--font-size-heading-1);
+}
+
+h2, .h2 {
+  font-size: var(--font-size-heading-2);
+}
+
+h3, .h3 {
+  font-size: var(--font-size-heading-3);
+}
+
+h4, .h4 {
+  font-size: var(--font-size-heading-4);
+}
+
+h5, .h5  {
+  font-size: var(--font-size-heading-5);
+}
+
+h6, .h6 {
+  font-size: var(--font-size-heading-6); 
+}
+
+p, a, li, .text-size-lg, .text-size-md, .text-size-sm {
+  font-family: var(--font-family-base);
+}
+
+.text-size-lg {
+  font-size: var(--font-size-text-lg);
+}
+
+.text-size-md {
+  font-size: var(--font-size-text-md);
+}
+
+.text-size-sm {
+  font-size: var(--font-size-text-sm);
+}
+
+.text-weight-strong {
+  font-weight: var(--font-weight-strong);
+}
+
+.text-weight-semi-bold {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.text-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.text-weight-light {
+  font-weight: var(--font-weight-light);
+}
+
+p, a, li {
+  font-size: var(--font-size-text-md);
+  font-weight: var(--font-weight-regular);
+}
+

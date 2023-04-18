@@ -1,0 +1,15 @@
+.login-form {
+    background: var(--color-primary);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form__username,
+.login-form__password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 2rem;
+}
