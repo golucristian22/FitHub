@@ -1,4 +1,4 @@
-import "./product-styles.css";
+import "./product-styles.scss";
 
 function Product(props) {
   return (

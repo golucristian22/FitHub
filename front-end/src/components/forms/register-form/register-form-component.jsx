@@ -1,4 +1,4 @@
-import "./register-form-styles.css";
+import "./register-form-styles.scss";
 const { useState } = require("react");
 
 function RegisterForm() {

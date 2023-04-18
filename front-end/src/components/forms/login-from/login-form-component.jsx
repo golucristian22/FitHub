@@ -1,4 +1,4 @@
-import "./login-form-styles.css";
+import "./login-form-styles.scss";
 
 import { useState } from "react";
 
