@@ -6,17 +6,30 @@ import TextWithIcon from "../../atoms/text-with-icon/text-with-icon-component";
 function Nav() {
   return (
     <nav className="nav">
-      <Logo href="/" logo={logoImage} alt="Logo Image" />
       <div className="nav__content">
-        <TextWithIcon
-          href="/"
-          text={<h6 style={{ color: "#fff" }}>Merge?</h6>}
-          iconName="linkedin"
-          iconWidth="30"
-          iconHeight="30"
-          iconColor="#999"
-          reversed
-        />
+        <div className="content__logo">
+          <Logo href="/" logo={logoImage} alt="Logo Image" />
+        </div>
+        <div className="content__items">
+          <TextWithIcon
+            href="/"
+            text={<h5 className="text-color-accent-primary">Basket (0)</h5>}
+            iconName="basket"
+            iconWidth="30"
+            iconHeight="30"
+            iconColor="var(--color-accent-primary)"
+            reversed
+          />
+          <TextWithIcon
+            href="/"
+            text={<h5 className="text-color-accent-primary">Account</h5>}
+            iconName="user"
+            iconWidth="30"
+            iconHeight="30"
+            iconColor="var(--color-accent-primary)"
+            reversed
+          />
+        </div>
       </div>
     </nav>
   );
