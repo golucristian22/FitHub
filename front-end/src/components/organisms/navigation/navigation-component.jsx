@@ -13,7 +13,7 @@ function Nav() {
         <div className="content__items">
           <TextWithIcon
             href="/"
-            text={<h5 className="text-color-accent-primary">Basket (0)</h5>}
+            text={<h5 className="text-color-accent-primary">Basket (1)</h5>}
             iconName="basket"
             iconWidth="30"
             iconHeight="30"
