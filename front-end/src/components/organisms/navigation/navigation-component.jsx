@@ -1,18 +1,21 @@
 import "./navigation-styles.scss";
+import Logo from "../../atoms/logo/logo-component";
+import logoImage from "../../../assets/vectors/logo.svg";
+import TextWithIcon from "../../atoms/text-with-icon/text-with-icon-component";
 
 function Nav() {
   return (
     <nav className="nav">
+      <Logo href="/" logo={logoImage} alt="Logo Image" />
       <div className="nav__content">
-        <div className="content__pages">
-          <a className="content__link" href="/">Homepage</a>
-          <a className="content__link" href="/blog">Blog</a>
-          <a className="content__link" href="/products">Product</a>
-        </div>
-        <div className="content__forms">
-          <a className="content__link" href="/register">Register</a>
-          <a className="content__link" href="/login">Login</a>
-        </div>
+        <TextWithIcon
+          text={<h6 style={{ color: "#fff" }}>Merge?</h6>}
+          iconName="linkedin"
+          iconWidth="30"
+          iconHeight="30"
+          iconColor="#999"
+          reversed
+        />
       </div>
     </nav>
   );
