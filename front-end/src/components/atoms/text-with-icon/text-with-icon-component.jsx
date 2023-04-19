@@ -2,7 +2,19 @@ import "./text-with-icon-styles.scss";
 import Icon from "../icon/icon-component";
 
 function TextWithIcon(props) {
-  return (
+  const textWithDescription = (
+    <div className={`twi ${props.reversed ? "twi--reversed" : ""}`}>
+      {props.text}
+      <Icon
+        iconName={props.iconName}
+        iconWidth={props.iconWidth}
+        iconHeight={props.iconHeight}
+        iconColor={props.iconColor}
+      />
+    </div>
+  );
+
+  const textWithDescriptionAsLink = (
     <a
       className={`twi ${props.reversed ? "twi--reversed" : ""}`}
       href={props.href}
@@ -16,6 +28,8 @@ function TextWithIcon(props) {
       />
     </a>
   );
+
+  return props.href ? textWithDescriptionAsLink : textWithDescription;
 }
 
 export default TextWithIcon;

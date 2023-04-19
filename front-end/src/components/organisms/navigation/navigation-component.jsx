@@ -9,6 +9,7 @@ function Nav() {
       <Logo href="/" logo={logoImage} alt="Logo Image" />
       <div className="nav__content">
         <TextWithIcon
+          href="/"
           text={<h6 style={{ color: "#fff" }}>Merge?</h6>}
           iconName="linkedin"
           iconWidth="30"

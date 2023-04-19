@@ -1,7 +1,8 @@
 .twi {
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
   gap: 4px;
+  text-decoration: none;
 
   &--reversed {
     flex-direction: row-reverse;
