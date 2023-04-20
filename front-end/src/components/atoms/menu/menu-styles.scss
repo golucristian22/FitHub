@@ -1,0 +1,37 @@
+.menu {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+
+  &__line {
+    background: var(--color-accent-primary);
+    border-radius: 4px;
+    height: 2px;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 40px;
+  }
+}
+
+.menu--open {
+  .menu {
+    &__line {
+      &--first {
+        transform: translateY(12px) rotate(45deg);
+      }
+
+      &--second {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+
+      &--third {
+        transform: translateY(-12px) rotate(-45deg);
+      }
+    }
+  }
+}
