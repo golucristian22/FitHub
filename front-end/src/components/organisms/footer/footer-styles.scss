@@ -3,11 +3,13 @@
   background: var(--color-primary);
   display: flex;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 var(--padding-inline);
 
   &__content {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
     max-width: var(--container-spacing-desktop);
     padding: 32px 0;
     width: 100%;
@@ -16,13 +18,17 @@
   .content {
     &__items {
       display: flex;
+      flex-direction: column;
       gap: 32px;
+      justify-content: center;
+      text-align: center;
     }
 
     &__item {
       display: flex;
       flex-direction: column;
       gap: 12px;
+      width: 184px;
     }
   }
 
@@ -34,7 +40,36 @@
     &__content {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+
+    .content {
+      &__items {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    &__content {
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .content {
+      &__items {
+        flex-direction: row;
+        text-align: left;
+      }
     }
   }
 }
