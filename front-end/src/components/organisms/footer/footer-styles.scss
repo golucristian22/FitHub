@@ -8,8 +8,8 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    max-width: var(--breaking-point-lg);
-    padding: 24px 0;
+    max-width: var(--container-spacing-desktop);
+    padding: 32px 0;
     width: 100%;
   }
 
