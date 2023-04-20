@@ -1,0 +1,40 @@
+.footer {
+  align-items: center;
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--breaking-point-lg);
+    padding: 24px 0;
+    width: 100%;
+  }
+
+  .content {
+    &__items {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .item {
+    &__title {
+      color: var(--color-accent-primary);
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}
