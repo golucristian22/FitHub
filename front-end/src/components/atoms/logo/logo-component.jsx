@@ -1,9 +1,10 @@
 import "./logo-styles.scss";
+import logoSVG from "../../../assets/vectors/logo.svg"
 
-function Logo(props) {
+function Logo() {
   return (
-    <a className="logo" href={props.href}>
-      <img className="logo__image" src={props.logo} alt={props.alt} />
+    <a className="logo" href="/">
+      <img className="logo__image" src={logoSVG} alt="Logo" />
     </a>
   );
 }

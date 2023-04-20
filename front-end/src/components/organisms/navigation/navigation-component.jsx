@@ -1,7 +1,6 @@
 import "./navigation-styles.scss";
 import Subnavigation from "../../molecules/subnavigation/subnavigation-component";
 import Logo from "../../atoms/logo/logo-component";
-import logoImage from "../../../assets/vectors/logo.svg";
 import TextWithIcon from "../../atoms/text-with-icon/text-with-icon-component";
 
 function Nav() {
@@ -10,7 +9,7 @@ function Nav() {
       <nav className="nav">
         <div className="nav__content">
           <div className="content__logo">
-            <Logo href="/" logo={logoImage} alt="Logo Image" />
+            <Logo />
           </div>
           <div className="content__items">
             <TextWithIcon
