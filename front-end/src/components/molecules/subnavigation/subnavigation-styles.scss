@@ -1,0 +1,15 @@
+.subnavigation {
+    align-items: center;
+    background: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    padding: 11px 20px;
+
+    &__content {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        max-width: var(--breaking-point-xl);
+    }
+}

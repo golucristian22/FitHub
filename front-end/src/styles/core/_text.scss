@@ -75,7 +75,9 @@ p, a, li, .text-size-lg, .text-size-md, .text-size-sm {
 }
 
 p, a, li {
+  color: var(--color-accent-primary);
   font-size: var(--font-size-text-md);
   font-weight: var(--font-weight-regular);
+  text-decoration: none;
 }
 
