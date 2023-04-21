@@ -11,7 +11,7 @@ function Menu() {
 }
 
 function menuEventDispatcher() {
-  const event = new CustomEvent("onMenuClick", {
+  const event = new CustomEvent("menuClick", {
     bubbles: true,
     composed: true,
   });
