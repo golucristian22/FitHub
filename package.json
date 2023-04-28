@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install": "npm ci --prefix back-end & npm ci --prefix front-end",
     "start": "npm start --prefix back-end & npm start --prefix front-end"
   },
   "keywords": [],
