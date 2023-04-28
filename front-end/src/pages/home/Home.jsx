@@ -5,7 +5,7 @@ function Home() {
   return (
     <>
       <Nav />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
