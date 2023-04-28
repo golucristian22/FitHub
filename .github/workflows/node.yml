@@ -1,4 +1,4 @@
-name: FitHub Project
+name: FitHub Project CI
 on: 
   push:
     branches: [ main ]
@@ -6,10 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v2
-      - name: Use Node.js version 19
+      - uses: actions/checkout@v3
+      - name: Use Node.js version 16
         uses: actions/setup-node@v3
         with: 
-          node-version: "19"
-        - run: npm install
-        - run: npm run build --prefix client
+          node-version: "16"
+      - run: npm install
+      - run: npm run build --prefix client
