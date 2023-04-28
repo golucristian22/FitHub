@@ -7,7 +7,7 @@ function App() {
       <Nav />
       <Product 
         imageSrc="https://via.placeholder.com/400x400" 
-        imageAlt="placeholder"
+        imageAlt="Placeholder"
         productHref="https://www.google.com"
         productOpenInNewTab="true"
         productTitle="Whey Protein"
