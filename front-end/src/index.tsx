@@ -7,7 +7,8 @@ import Products from "./pages/products/Products";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const rootElement: HTMLElement = document.getElementById("root") as HTMLElement;
+const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
