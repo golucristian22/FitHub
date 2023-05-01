@@ -1,4 +1,4 @@
-import Nav from "../../components/organisms/navigation/navigation-component";
+import Nav from "../../components/organisms/navigation/navigation-component.tsx";
 import LoginForm from "../../components/molecules/forms/login-from/login-form-component";
 
 function Login() {
