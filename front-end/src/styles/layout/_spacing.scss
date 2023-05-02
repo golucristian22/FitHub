@@ -1,12 +1,11 @@
 :root {
-    --container-spacing-mobile: 375px;
-    --container-spacing-tablet: 900px;
-    --container-spacing-desktop: 1440px;
-    
-    --container-margin-mobile: 0 20px;
-    --container-margin-tablet: 0 40px;
-    --container-margin-desktop: 0;
+  --container-spacing-mobile: calc(400px + 2 * var(--container-padding-inline-mobile));
+  --container-spacing-tablet: calc(704px + 2 * var(--container-padding-inline-tablet));
+  --container-spacing-desktop: calc(1200px + 2 * var(--container-padding-inline-desktop));
 
-    --padding-inline: 24px;
-    --padding-block: 40px;
+  --container-padding-inline-mobile: 16px;
+  --container-padding-inline-tablet: 32px;
+  --container-padding-inline-desktop: 120px;
+
+  --padding-inline: var(--container-padding-inline-mobile);
 }

@@ -1,0 +1,19 @@
+section {
+  max-width: none;
+  padding: 0 var(--container-padding-inline-mobile);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  section {
+    max-width: var(--container-spacing-tablet);
+    padding: 0 var(--container-padding-inline-tablet);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    max-width: var(--container-spacing-desktop);
+    padding: 0 var(--container-padding-inline-desktop);
+  }
+}
