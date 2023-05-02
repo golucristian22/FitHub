@@ -1,13 +1,14 @@
 section {
   display: flex;
   gap: var(--container-gap-mobile);
-  margin: 0 auto;
+  margin: var(--container-margin-mobile);
   max-width: none;
   padding: 0 var(--container-padding-inline-mobile);
 }
 
 @media screen and (min-width: 576px) {
   section {
+    margin: var(--container-margin-tablet);
     gap: var(--container-gap-tablet);
     max-width: var(--container-spacing-tablet);
     padding: 0 var(--container-padding-inline-tablet);
@@ -16,6 +17,7 @@ section {
 
 @media screen and (min-width: 992px) {
   section {
+    margin: var(--container-margin-desktop);
     gap: var(--container-gap-desktop);
     max-width: var(--container-spacing-desktop);
     padding: 0 var(--container-padding-inline-desktop);
