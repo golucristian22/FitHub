@@ -1,3 +1,4 @@
+import React from "react";
 import "./subfooter-styles.scss";
 import Icon from "../../atoms/icon/icon-component";
 

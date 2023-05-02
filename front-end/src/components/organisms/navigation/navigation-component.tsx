@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import NavDesktop from "./navigation-desktop/navigation-desktop-component";
-import NavMobile from "./navigation-mobile/navigation-mobile-component";
+import NavDesktop from "./navigation-desktop/navigation-desktop-component.tsx";
+import NavMobile from "./navigation-mobile/navigation-mobile-component.tsx";
 
 function Nav() {
   const [isMatchingMedia, setIsMatchingMedia] = useState(false);

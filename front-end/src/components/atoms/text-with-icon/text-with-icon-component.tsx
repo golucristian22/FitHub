@@ -1,9 +1,20 @@
+import React from "react";
 import "./text-with-icon-styles.scss";
 import Icon from "../icon/icon-component";
 
-function TextWithIcon(props) {
+interface TextWithIconPropertiesInterface {
+  isReversed: boolean;
+  text: string | React.ReactNode;
+  href?: string;
+  iconName: string;
+  iconWidth: string;
+  iconHeight: string;
+  iconColor: string;
+}
+
+function TextWithIcon(props: TextWithIconPropertiesInterface) {
   const textWithDescription = (
-    <div className={`twi ${props.reversed ? "twi--reversed" : ""}`}>
+    <div className={`twi ${props.isReversed ? "twi--reversed" : ""}`}>
       {props.text}
       <Icon
         iconName={props.iconName}
@@ -16,7 +27,7 @@ function TextWithIcon(props) {
 
   const textWithDescriptionAsLink = (
     <a
-      className={`twi ${props.reversed ? "twi--reversed" : ""}`}
+      className={`twi ${props.isReversed ? "twi--reversed" : ""}`}
       href={props.href}
     >
       {props.text}

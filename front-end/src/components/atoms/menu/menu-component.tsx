@@ -1,3 +1,4 @@
+import React from "react";
 import "./menu-styles.scss";
 
 function Menu() {
@@ -20,8 +21,12 @@ function menuEventDispatcher() {
 
 function onMenuClick() {
   const menu = document.querySelector(".menu");
-  menu.classList.toggle("menu--open");
-  menuEventDispatcher();
+  if (menu) {
+    menu.classList.toggle("menu--open");
+    menuEventDispatcher();
+  } else {
+    throw new Error("No element with class 'menu' found");
+  }
 }
 
 export default Menu;

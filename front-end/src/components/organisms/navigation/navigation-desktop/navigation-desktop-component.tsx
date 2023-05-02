@@ -1,7 +1,8 @@
+import React from "react";
 import "./navigation-desktop-styles.scss";
-import Subnavigation from "../../../molecules/subnavigation/subnavigation-component";
-import Logo from "../../../atoms/logo/logo-component";
-import TextWithIcon from "../../../atoms/text-with-icon/text-with-icon-component";
+import Subnavigation from "../../../molecules/subnavigation/subnavigation-component.tsx";
+import Logo from "../../../atoms/logo/logo-component.tsx";
+import TextWithIcon from "../../../atoms/text-with-icon/text-with-icon-component.tsx";
 
 function NavDesktop() {
   return (
@@ -19,7 +20,7 @@ function NavDesktop() {
               iconWidth="30"
               iconHeight="30"
               iconColor="var(--color-accent-primary)"
-              reversed
+              isReversed
             />
             <TextWithIcon
               href="/"
@@ -28,7 +29,7 @@ function NavDesktop() {
               iconWidth="30"
               iconHeight="30"
               iconColor="var(--color-accent-primary)"
-              reversed
+              isReversed
             />
           </div>
         </div>

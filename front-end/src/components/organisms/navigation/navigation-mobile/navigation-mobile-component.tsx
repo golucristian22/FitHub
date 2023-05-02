@@ -1,3 +1,4 @@
+import React from "react";
 import "./navigation-mobile-styles.scss";
 import Logo from "../../../atoms/logo/logo-component";
 import TextWithIcon from "../../../atoms/text-with-icon/text-with-icon-component";
@@ -30,7 +31,7 @@ function NavMobile() {
               iconWidth="30"
               iconHeight="30"
               iconColor="var(--color-accent-primary)"
-              reversed
+              isReversed
             />
             <TextWithIcon
               href="/"
@@ -39,7 +40,7 @@ function NavMobile() {
               iconWidth="30"
               iconHeight="30"
               iconColor="var(--color-accent-primary)"
-              reversed
+              isReversed
             />
           </div>
           <span className="content__bar"></span>

@@ -1,4 +1,6 @@
-const icon = (iconName, iconWidth, iconHeight, iconColor) => {
+import React from "react";
+
+const icon = (iconName: string, iconWidth: string, iconHeight: string, iconColor: string) => {
   switch (iconName) {
     case "basket":
       return <svg width={iconWidth} height={iconHeight} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.75 12.5H26.25M3.75 12.5L6.25 25H23.75L26.25 12.5M3.75 12.5L11.25 5M26.25 12.5L18.75 5" stroke={iconColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg> 
@@ -13,7 +15,14 @@ const icon = (iconName, iconWidth, iconHeight, iconColor) => {
   }
 };
 
-function Icon(props) {
+interface IconPropertiesInterface {
+  iconName: string;
+  iconWidth: string;
+  iconHeight: string;
+  iconColor: string;
+}
+
+function Icon(props: IconPropertiesInterface) {
   return (
     <div className="icon">
       {icon(props.iconName, props.iconWidth, props.iconHeight, props.iconColor)}

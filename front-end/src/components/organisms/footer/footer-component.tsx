@@ -1,6 +1,7 @@
+import React from "react";
 import "./footer-styles.scss";
 import Logo from "../../atoms/logo/logo-component";
-import Subfooter from "../../molecules/subfooter/subfooter-component";
+import Subfooter from "../../molecules/subfooter/subfooter-component.tsx";
 
 function Footer() {
   return (
