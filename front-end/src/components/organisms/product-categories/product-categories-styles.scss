@@ -1,0 +1,19 @@
+.product-categories {
+  display: flex;
+  flex-direction: column;
+
+  &__first-product-category {
+    width: 100%;
+  }
+
+  &__second-product-category {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .product-categories {
+    flex-direction: row;
+  }
+}
