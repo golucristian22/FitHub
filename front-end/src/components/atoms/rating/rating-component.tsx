@@ -8,10 +8,11 @@ interface ratingPropertiesInterface {
 }
 
 function Rating(props: ratingPropertiesInterface) {
-  const starIcon = (<Icon iconName="star" iconColor="var(--color-tertiary)" iconHeight="24px" iconWidth="24px" />);
-  const starFilledIcon = (<Icon iconName="star-filled" iconColor="var(--color-tertiary)" iconHeight="24px" iconWidth="24px" />);
 
   const ratingStars = [...Array(5)].map((star, index) => {
+    const starIcon = (<Icon iconName="star" iconColor="var(--color-tertiary)" iconHeight="24px" iconWidth="24px" key={index} />);
+    const starFilledIcon = (<Icon iconName="star-filled" iconColor="var(--color-tertiary)" iconHeight="24px" iconWidth="24px" key={index} />);
+
     return Math.round(props.stars) > index ? starFilledIcon : starIcon;
   });
 
