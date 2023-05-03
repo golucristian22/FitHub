@@ -10,6 +10,7 @@ import clothingCategoryPhoto from "../../assets/images/category-clothing.png";
 import Rating from "../../components/atoms/rating/rating-component.tsx";
 import Product from "../../components/molecules/product/product-component.tsx";
 import Color from "../../components/atoms/color/color-component.tsx";
+import Colors from "../../components/molecules/colors/colors-component.tsx";
 
 function Home() {
   return (
@@ -21,7 +22,19 @@ function Home() {
           imageSrc="https://via.placeholder.com/400x300"
           imageAlt="placeholder"
           title="Test Product"
-          colors={<Color color="var(--color-accent-secondary)" href="/product/green"/>}
+          colors={
+            <Colors
+              color={
+                <>
+                  <Color color="var(--color-primary)" href="/product/green" />
+                  <Color color="var(--color-secondary)" href="/product/red" />
+                  <Color color="var(--color-tertiary)" href="/product/yellow" />
+                  <Color color="var(--color-accent-primary)" href="/product/blue" />
+                  <Color color="var(--color-accent-secondary)" href="/product/dark-blue" />
+                </>
+              }
+            />
+          }
           rating={<Rating stars={4.8} reviews={10} />}
           price="19.99$"
         />
