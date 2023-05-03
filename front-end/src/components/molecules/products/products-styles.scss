@@ -1,0 +1,19 @@
+.products {
+  flex-direction: column;
+
+  .product {
+    margin: 0 auto;
+    max-width: 387px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    flex-direction: row;
+
+    .product {
+      margin: 0;
+      max-width: none;
+    }
+  }
+}

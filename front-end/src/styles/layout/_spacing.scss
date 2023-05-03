@@ -1,7 +1,7 @@
 :root {
-  --container-spacing-mobile: calc(400px + 2 * var(--container-padding-inline-mobile));
-  --container-spacing-tablet: calc(704px + 2 * var(--container-padding-inline-tablet));
-  --container-spacing-desktop: calc(1200px + 2 * var(--container-padding-inline-desktop));
+  --container-spacing-mobile: 400px; 
+  --container-spacing-tablet: 704px;
+  --container-spacing-desktop: 1200px; 
 
   --container-padding-inline-mobile: 16px;
   --container-padding-inline-tablet: 32px;
