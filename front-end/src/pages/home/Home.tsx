@@ -12,7 +12,7 @@ import Rating from "../../components/atoms/rating/rating-component.tsx";
 import Product from "../../components/molecules/product/product-component.tsx";
 import Color from "../../components/atoms/color/color-component.tsx";
 import Colors from "../../components/molecules/colors/colors-component.tsx";
-import Products from "../../components/molecules/products/products-component.tsx";
+import Products from "../../components/organisms/products/products-component.tsx";
 
 function Home() {
   return (
