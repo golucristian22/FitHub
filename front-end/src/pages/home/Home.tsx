@@ -7,18 +7,22 @@ import ProductCategories from "../../components/organisms/product-categories/pro
 
 import proteinCategoryPhoto from "../../assets/images/category-protein.png";
 import clothingCategoryPhoto from "../../assets/images/category-clothing.png";
+import vitaminsCategoryPhoto from "../../assets/images/category-vitamins.png";
+import snacksCategoryPhoto from "../../assets/images/category-snacks.png";
 
 import Rating from "../../components/atoms/rating/rating-component.tsx";
 import Product from "../../components/molecules/product/product-component.tsx";
 import Color from "../../components/atoms/color/color-component.tsx";
 import Colors from "../../components/molecules/colors/colors-component.tsx";
 import Products from "../../components/organisms/products/products-component.tsx";
+import Input from "../../components/atoms/input/input-component.tsx";
 
 function Home() {
   return (
     <>
       <Nav />
       <Banner />
+      <Input placeholder="Enter your email..." />
       <ProductCategories
         firstProductCategory={
           <ProductCategory
@@ -43,7 +47,25 @@ function Home() {
       <Products 
         product= {
           <>
-            {[...Array(5)].map((product, index) => {
+            {[...Array(3)].map((product, index) => {
+              return (
+                <Product
+                  imageSrc="https://via.placeholder.com/400x300"
+                  imageAlt="placeholder"
+                  title="Test Product With Longer Text For Testing Purposes"
+                  key={index}
+                  rating={<Rating stars={4.8} reviews={10} />}
+                  price="19.99$"
+                />
+              )
+            })}
+          </>
+        } 
+      />
+      <Products 
+        product= {
+          <>
+            {[...Array(3)].map((product, index) => {
               return (
                 <Product
                   imageSrc="https://via.placeholder.com/400x300"
@@ -71,6 +93,65 @@ function Home() {
           </>
         } 
       />
+      
+      <ProductCategories
+        firstProductCategory={
+          <ProductCategory
+            href="/"
+            src={vitaminsCategoryPhoto}
+            alt="Protein"
+            title="Protein"
+            buttonText="SHOP NOW"
+          />
+        }
+        secondProductCategory={
+          <ProductCategory
+            href="/"
+            src={snacksCategoryPhoto}
+            alt="Clothing"
+            title="Clothing"
+            buttonText="SHOP NOW"
+          />
+        }
+      />
+
+      <Products 
+        product= {
+          <>
+            {[...Array(3)].map((product, index) => {
+              return (
+                <Product
+                  imageSrc="https://via.placeholder.com/400x300"
+                  imageAlt="placeholder"
+                  title="Test Product With Longer Text For Testing Purposes"
+                  key={index}
+                  rating={<Rating stars={4.8} reviews={10} />}
+                  price="19.99$"
+                />
+              )
+            })}
+          </>
+        } 
+      />
+      <Products 
+        product= {
+          <>
+            {[...Array(3)].map((product, index) => {
+              return (
+                <Product
+                  imageSrc="https://via.placeholder.com/400x300"
+                  imageAlt="placeholder"
+                  title="Test Product With Longer Text For Testing Purposes"
+                  key={index}
+                  rating={<Rating stars={4.8} reviews={10} />}
+                  price="19.99$"
+                />
+              )
+            })}
+          </>
+        } 
+      />
+
      <Footer />
     </>
   );
