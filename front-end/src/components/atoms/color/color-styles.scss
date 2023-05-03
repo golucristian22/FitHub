@@ -1,0 +1,12 @@
+.color {
+  display: inline-block;
+
+  span {
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 24px;
+    width: 24px;
+  }
+}
