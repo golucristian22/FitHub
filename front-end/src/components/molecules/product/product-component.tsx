@@ -1,5 +1,6 @@
 import React from "react";
 import "./product-styles.scss";
+import Button from "../../atoms/button/button-component";
 
 interface productPropertiesInterface {
   imageSrc: string;
@@ -18,6 +19,9 @@ function Product(props: productPropertiesInterface) {
           src={props.imageSrc}
           alt={props.imageAlt}
         />
+        <div className="product__action">
+          <Button variant="primary" text={<h6 className="text-color-accent-primary">Add to Basket</h6>} />
+        </div>
       </div>
       <div className="product__content">
         <h5 className="content__title">{props.title}</h5>
