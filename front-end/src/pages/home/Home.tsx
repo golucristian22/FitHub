@@ -156,6 +156,26 @@ function Home() {
         title="Subscribe, Save & Thrive"
         description="Get all the latest news straight to your inbox, FitHub exclusives, newest products and more!"
       />
+
+      <Products 
+        title="Brand New"
+        product= {
+          <>
+            {[...Array(6)].map((product, index) => {
+              return (
+                <Product
+                  imageSrc="https://via.placeholder.com/400x300"
+                  imageAlt="placeholder"
+                  title="Test Product With Longer Text For Testing Purposes"
+                  key={index}
+                  rating={<Rating stars={4.8} reviews={10} />}
+                  price="19.99$"
+                />
+              )
+            })}
+          </>
+        } 
+      />
      <Footer />
     </>
   );
