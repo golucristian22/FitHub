@@ -1,0 +1,13 @@
+.rating {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+
+  &__stars {
+    display: flex;
+  }
+
+  &__reviews {
+    color: var(--color-accent-secondary);
+  }
+}
