@@ -16,13 +16,13 @@ import Color from "../../components/atoms/color/color-component.tsx";
 import Colors from "../../components/molecules/colors/colors-component.tsx";
 import Products from "../../components/organisms/products/products-component.tsx";
 import Input from "../../components/atoms/input/input-component.tsx";
+import SubscribeForm from "../../components/organisms/subscribe-form/subscribe-form-component.tsx";
 
 function Home() {
   return (
     <>
       <Nav />
       <Banner />
-      <Input placeholder="Enter your email..." />
       <ProductCategories
         firstProductCategory={
           <ProductCategory
@@ -152,6 +152,10 @@ function Home() {
         } 
       />
 
+      <SubscribeForm 
+        title="Subscribe, Save & Thrive"
+        description="Get all the latest news straight to your inbox, FitHub exclusives, newest products and more!"
+      />
      <Footer />
     </>
   );

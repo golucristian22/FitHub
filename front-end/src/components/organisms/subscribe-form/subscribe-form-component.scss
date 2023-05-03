@@ -1,0 +1,33 @@
+.subscribe-form {
+  align-items: center;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+
+  &__title {
+    color: var(--color-accent-primary);
+    font-family: var(--font-family-heading-alternative);
+  }
+
+  &__description {
+    color: var(--color-accent-primary);
+    margin-top: 10px;
+  }
+
+  &__input {
+    align-items: center;
+    color: var(--color-accent-primary);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 24px;
+    width: 100%;
+
+    .button {
+      padding: 11px 16px;
+    }
+  }
+}
