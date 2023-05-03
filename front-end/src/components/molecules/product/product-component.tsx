@@ -26,9 +26,11 @@ function Product(props: productPropertiesInterface) {
       </div>
       <div className="product__content">
         <h5 className="content__title">{props.title}</h5>
-        <div className="content__rating">{props.rating}</div>
-        {props.colors ? <div className="content__colors">{props.colors}</div> : ""}
-        <h5 className="content__price">{props.price}</h5>
+        <div className="content__wrapper">
+          <div className="content__rating">{props.rating}</div>
+          {props.colors ? <div className="content__colors">{props.colors}</div> : ""}
+          <h5 className="content__price">{props.price}</h5>
+        </div>
       </div>
     </div>
   );
