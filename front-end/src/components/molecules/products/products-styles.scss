@@ -9,7 +9,8 @@
 
 @media screen and (min-width: 768px) {
   .products {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
     .product {
       margin: 0;
