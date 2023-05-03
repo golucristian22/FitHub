@@ -8,13 +8,22 @@ import ProductCategories from "../../components/organisms/product-categories/pro
 import proteinCategoryPhoto from "../../assets/images/category-protein.png";
 import clothingCategoryPhoto from "../../assets/images/category-clothing.png";
 import Rating from "../../components/atoms/rating/rating-component.tsx";
+import Product from "../../components/molecules/product/product-component.tsx";
 
 function Home() {
   return (
     <>
       <Nav />
       <Banner />
-      <Rating stars={1.8} reviews={0}/>
+      <div style={{ width: "388px" }}>
+        <Product
+          imageSrc="https://via.placeholder.com/400x300"
+          imageAlt="placeholder"
+          title="Test Product"
+          rating={<Rating stars={4.8} reviews={10} />}
+          price="19.99$"
+        />
+      </div>
       <ProductCategories
         firstProductCategory={
           <ProductCategory
