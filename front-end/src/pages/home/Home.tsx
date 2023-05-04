@@ -15,10 +15,9 @@ import Product from "../../components/molecules/product/product-component.tsx";
 import Color from "../../components/atoms/color/color-component.tsx";
 import Colors from "../../components/molecules/colors/colors-component.tsx";
 import Products from "../../components/organisms/products/products-component.tsx";
-import Input from "../../components/atoms/input/input-component.tsx";
 import SubscribeForm from "../../components/organisms/subscribe-form/subscribe-form-component.tsx";
 
-function Home() {
+function HomePage() {
   return (
     <>
       <Nav />
@@ -26,7 +25,7 @@ function Home() {
       <ProductCategories
         firstProductCategory={
           <ProductCategory
-            href="/"
+            href="/protein"
             src={proteinCategoryPhoto}
             alt="Protein"
             title="Protein"
@@ -181,4 +180,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
