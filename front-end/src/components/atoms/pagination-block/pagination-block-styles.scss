@@ -1,0 +1,21 @@
+.pagination-block {
+  align-items: center;
+  background-color: var(--color-tertiary);
+  color: var(--color-accent-primary);
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  overflow: hidden;
+  width: 48px;
+
+  &--selected {
+    background-color: var(--color-secondary);
+  }
+
+  &--disabled {
+    pointer-events: none;
+    cursor: none;
+    background-color: var(--color-accent-secondary);
+  }
+}
