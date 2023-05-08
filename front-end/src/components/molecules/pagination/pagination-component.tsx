@@ -24,7 +24,7 @@ function Pagination(props: paginationProperties) {
   return (
     <div className="pagination">
       <h1>{currentPage+1}</h1>
-      <PaginationBlock variant={currentPage > 1 ? "default" : "disabled"} isApoint apointDirection="backward" icon={ <Icon iconName="chevron-left" iconColor="#fff" iconHeight="24px" iconWidth="24px" /> } />
+      <PaginationBlock variant={currentPage > 0 ? "default" : "disabled"} isApoint apointDirection="backward" icon={ <Icon iconName="chevron-left" iconColor="#fff" iconHeight="24px" iconWidth="24px" /> } />
       {generatePages}
       <PaginationBlock variant={currentPage >= props.pages - 1 ? "disabled" : "default"} isApoint apointDirection="forward" icon={ <Icon iconName="chevron-right" iconColor="#fff" iconHeight="24px" iconWidth="24px" /> } />
     </div>
