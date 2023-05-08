@@ -7,7 +7,7 @@ interface paginationProperties {
   pages: number;
 }
 
-function Pagination(props: paginationProperties) {
+function Pagination(props: paginationProperties): JSX.Element {
   const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
@@ -17,13 +17,14 @@ function Pagination(props: paginationProperties) {
     };
   });
 
-  const generatePages = [...Array(props.pages)].map((value, index) => {
-      return <PaginationBlock variant="default" onClick={() => onPageClick(index)} state={(currentPage === index) ? true : false} text={`${index + 1}`} key={index} />;
+  useEffect(pageChangeEventDispatcher, [currentPage]);
+
+  const generatePages: JSX.Element[] = [...Array(props.pages)].map((value, index) => {
+      return <PaginationBlock variant="default" onClick={() => onPageClick(index)} state={(currentPage === index) ? true : false} text={`${index + 1}`} key={index} />
   });
 
   return (
     <div className="pagination">
-      <h1>{currentPage+1}</h1>
       <PaginationBlock variant={currentPage > 0 ? "default" : "disabled"} isApoint apointDirection="backward" icon={ <Icon iconName="chevron-left" iconColor="#fff" iconHeight="24px" iconWidth="24px" /> } />
       {generatePages}
       <PaginationBlock variant={currentPage >= props.pages - 1 ? "disabled" : "default"} isApoint apointDirection="forward" icon={ <Icon iconName="chevron-right" iconColor="#fff" iconHeight="24px" iconWidth="24px" /> } />
@@ -45,8 +46,19 @@ function Pagination(props: paginationProperties) {
 
   function onPageClick(index: number): void {
     if(index === currentPage) return;
-    console.log(index);
     setCurrentPage(index);
+  }
+
+  function pageChangeEventDispatcher(): void {
+    const event = new CustomEvent("pageChangeEvent", {
+      detail: {
+        currentPage: currentPage,
+      },
+      composed: true,
+      bubbles: false,
+    })
+
+    document.dispatchEvent(event);
   }
 }
 
