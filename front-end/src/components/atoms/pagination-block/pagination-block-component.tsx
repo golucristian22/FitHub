@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./pagination-block-styles.scss";
 
 
 interface paginationBlockDefaultProperties {
   variant: "default" | "disabled";
+  state?: boolean;
+  onClick?: any;
   text?: string;
   icon?: React.ReactNode;
 }
@@ -15,10 +17,15 @@ type paginationBlockApointVariantProperties =
 type paginationBlockProperties = paginationBlockDefaultProperties & paginationBlockApointVariantProperties;
 
 function PaginationBlock(props: paginationBlockProperties) {
-  const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState(props.state);
+
+  useEffect(() => {
+    setIsSelected(props.state);
+  }, [props.state])
 
   return (
-    <div className={`pagination-block ${isSelected ? "pagination-block--selected" : ""} ${props.variant === "disabled" ? "pagination-block--disabled" : ""} `}
+    <div 
+      className={`pagination-block ${isSelected ? "pagination-block--selected" : ""} ${props.variant === "disabled" ? "pagination-block--disabled" : ""} `}
       onClick={onPaginationBlockClick}
     >
       {props.text ? <h5>{props.text}</h5> : ""}
@@ -30,12 +37,12 @@ function PaginationBlock(props: paginationBlockProperties) {
     if(props.isApoint && props.apointDirection && props.variant !== "disabled") {
       dispatchApointDirectionEvent();
     } else {
-      setIsSelected(true);
+      props.onClick();
     }
   }
 
   function dispatchApointDirectionEvent(): void {
-    const event = new CustomEvent("apointDirectionEvent", {
+    const event = new CustomEvent("apointDirectionClickEvent", {
       detail: {
         direction: props.apointDirection,
       },
