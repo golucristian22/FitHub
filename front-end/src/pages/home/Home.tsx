@@ -42,57 +42,96 @@ function HomePage() {
           />
         }
       />
- 
-      <Products 
-        product= {
-          <>
-            {[...Array(3)].map((product, index) => {
-              return (
-                <Product
-                  imageSrc="https://via.placeholder.com/400x300"
-                  imageAlt="placeholder"
-                  title="Test Product With Longer Text For Testing Purposes"
-                  key={index}
-                  rating={<Rating stars={4.8} reviews={10} />}
-                  price="19.99$"
-                />
-              )
-            })}
-          </>
-        } 
-      />
-      <Products 
-        product= {
-          <>
-            {[...Array(3)].map((product, index) => {
-              return (
-                <Product
-                  imageSrc="https://via.placeholder.com/400x300"
-                  imageAlt="placeholder"
-                  title="Test Product With Longer Text For Testing Purposes"
-                  key={index}
-                  colors={
-                    <Colors
-                      color={
-                        <>
-                          <Color color="var(--color-primary)" href="/product/green" />
-                          <Color color="var(--color-secondary)" href="/product/red" />
-                          <Color color="var(--color-tertiary)" href="/product/yellow" />
-                          <Color color="var(--color-accent-primary)" href="/product/blue" />
-                          <Color color="var(--color-accent-secondary)" href="/product/dark-blue" />
-                        </>
-                      }
-                    />
-                  }
-                  rating={<Rating stars={4.8} reviews={10} />}
-                  price="19.99$"
-                />
-              )
-            })}
-          </>
-        } 
-      />
-      
+
+      <Products>
+        <>
+          {[...Array(3)].map((product, index) => {
+            return (
+              <Product
+                imageSrc="https://via.placeholder.com/400x300"
+                imageAlt="placeholder"
+                title="Test Product With Longer Text For Testing Purposes"
+                key={index}
+                colors={
+                  <Colors
+                    color={
+                      <>
+                        <Color
+                          color="var(--color-primary)"
+                          href="/product/green"
+                        />
+                        <Color
+                          color="var(--color-secondary)"
+                          href="/product/red"
+                        />
+                        <Color
+                          color="var(--color-tertiary)"
+                          href="/product/yellow"
+                        />
+                        <Color
+                          color="var(--color-accent-primary)"
+                          href="/product/blue"
+                        />
+                        <Color
+                          color="var(--color-accent-secondary)"
+                          href="/product/dark-blue"
+                        />
+                      </>
+                    }
+                  />
+                }
+                rating={<Rating stars={4.8} reviews={10} />}
+                price="19.99$"
+              />
+            );
+          })}
+        </>
+      </Products>
+      <Products>
+        <>
+          {[...Array(3)].map((product, index) => {
+            return (
+              <Product
+                imageSrc="https://via.placeholder.com/400x300"
+                imageAlt="placeholder"
+                title="Test Product With Longer Text For Testing Purposes"
+                key={index}
+                colors={
+                  <Colors
+                    color={
+                      <>
+                        <Color
+                          color="var(--color-primary)"
+                          href="/product/green"
+                        />
+                        <Color
+                          color="var(--color-secondary)"
+                          href="/product/red"
+                        />
+                        <Color
+                          color="var(--color-tertiary)"
+                          href="/product/yellow"
+                        />
+                        <Color
+                          color="var(--color-accent-primary)"
+                          href="/product/blue"
+                        />
+                        <Color
+                          color="var(--color-accent-secondary)"
+                          href="/product/dark-blue"
+                        />
+                      </>
+                    }
+                  />
+                }
+                rating={<Rating stars={4.8} reviews={10} />}
+                price="19.99$"
+              />
+            );
+          })}
+        </>
+      </Products>
+
       <ProductCategories
         firstProductCategory={
           <ProductCategory
@@ -114,68 +153,145 @@ function HomePage() {
         }
       />
 
-      <Products 
-        product= {
-          <>
-            {[...Array(3)].map((product, index) => {
-              return (
-                <Product
-                  imageSrc="https://via.placeholder.com/400x300"
-                  imageAlt="placeholder"
-                  title="Test Product With Longer Text For Testing Purposes"
-                  key={index}
-                  rating={<Rating stars={4.8} reviews={10} />}
-                  price="19.99$"
-                />
-              )
-            })}
-          </>
-        } 
-      />
-      <Products 
-        product= {
-          <>
-            {[...Array(3)].map((product, index) => {
-              return (
-                <Product
-                  imageSrc="https://via.placeholder.com/400x300"
-                  imageAlt="placeholder"
-                  title="Test Product With Longer Text For Testing Purposes"
-                  key={index}
-                  rating={<Rating stars={4.8} reviews={10} />}
-                  price="19.99$"
-                />
-              )
-            })}
-          </>
-        } 
-      />
+      <Products>
+        <>
+          {[...Array(3)].map((product, index) => {
+            return (
+              <Product
+                imageSrc="https://via.placeholder.com/400x300"
+                imageAlt="placeholder"
+                title="Test Product With Longer Text For Testing Purposes"
+                key={index}
+                colors={
+                  <Colors
+                    color={
+                      <>
+                        <Color
+                          color="var(--color-primary)"
+                          href="/product/green"
+                        />
+                        <Color
+                          color="var(--color-secondary)"
+                          href="/product/red"
+                        />
+                        <Color
+                          color="var(--color-tertiary)"
+                          href="/product/yellow"
+                        />
+                        <Color
+                          color="var(--color-accent-primary)"
+                          href="/product/blue"
+                        />
+                        <Color
+                          color="var(--color-accent-secondary)"
+                          href="/product/dark-blue"
+                        />
+                      </>
+                    }
+                  />
+                }
+                rating={<Rating stars={4.8} reviews={10} />}
+                price="19.99$"
+              />
+            );
+          })}
+        </>
+      </Products>
+      <Products>
+        <>
+          {[...Array(3)].map((product, index) => {
+            return (
+              <Product
+                imageSrc="https://via.placeholder.com/400x300"
+                imageAlt="placeholder"
+                title="Test Product With Longer Text For Testing Purposes"
+                key={index}
+                colors={
+                  <Colors
+                    color={
+                      <>
+                        <Color
+                          color="var(--color-primary)"
+                          href="/product/green"
+                        />
+                        <Color
+                          color="var(--color-secondary)"
+                          href="/product/red"
+                        />
+                        <Color
+                          color="var(--color-tertiary)"
+                          href="/product/yellow"
+                        />
+                        <Color
+                          color="var(--color-accent-primary)"
+                          href="/product/blue"
+                        />
+                        <Color
+                          color="var(--color-accent-secondary)"
+                          href="/product/dark-blue"
+                        />
+                      </>
+                    }
+                  />
+                }
+                rating={<Rating stars={4.8} reviews={10} />}
+                price="19.99$"
+              />
+            );
+          })}
+        </>
+      </Products>
 
-      <SubscribeForm 
+      <SubscribeForm
         title="Subscribe, Save & Thrive"
         description="Get all the latest news straight to your inbox, FitHub exclusives, newest products and more!"
       />
 
-      <Products 
-        title="Brand New"
-        product= {
-          <>
-            {[...Array(6)].map((product, index) => {
-              return (
-                <Product
-                  imageSrc="https://via.placeholder.com/400x300"
-                  imageAlt="placeholder"
-                  title="Test Product With Longer Text For Testing Purposes"
-                  key={index}
-                  rating={<Rating stars={4.8} reviews={10} />}
-                  price="19.99$"
-                />
-              )
-            })}
-          </>
-        } 
-      />
-     <Footer />
+      <Products>
+        <>
+          {[...Array(3)].map((product, index) => {
+            return (
+              <Product
+                imageSrc="https://via.placeholder.com/400x300"
+                imageAlt="placeholder"
+                title="Test Product With Longer Text For Testing Purposes"
+                key={index}
+                colors={
+                  <Colors
+                    color={
+                      <>
+                        <Color
+                          color="var(--color-primary)"
+                          href="/product/green"
+                        />
+                        <Color
+                          color="var(--color-secondary)"
+                          href="/product/red"
+                        />
+                        <Color
+                          color="var(--color-tertiary)"
+                          href="/product/yellow"
+                        />
+                        <Color
+                          color="var(--color-accent-primary)"
+                          href="/product/blue"
+                        />
+                        <Color
+                          color="var(--color-accent-secondary)"
+                          href="/product/dark-blue"
+                        />
+                      </>
+                    }
+                  />
+                }
+                rating={<Rating stars={4.8} reviews={10} />}
+                price="19.99$"
+              />
+            );
+          })}
+        </>
+      </Products>
+      <Footer />
     </>
   );
 }
