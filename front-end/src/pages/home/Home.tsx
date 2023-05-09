@@ -247,7 +247,7 @@ function HomePage() {
         description="Get all the latest news straight to your inbox, FitHub exclusives, newest products and more!"
       />
 
-      <Products>
+      <Products title="Brand New">
         <>
           {[...Array(3)].map((product, index) => {
             return (
