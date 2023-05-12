@@ -1,18 +1,40 @@
 .filters {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   &__filters {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     gap: 12px;
+    width: 100%;
 
     .filter {
-      max-width: 245px;
+      max-width: 387px;
     }
   }
 
   &__pagination {
-    display: flex;
     align-items: flex-end;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    &__filters {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: 1175px) {
+  .filters {
+    flex-direction: row;
+
+    .filter {
+      max-width: 245px;
+    }
   }
 }
