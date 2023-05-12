@@ -8,11 +8,7 @@
   justify-content: center;
   overflow: hidden;
   width: 48px;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-
+  
   &--selected {
     background-color: var(--color-secondary);
   }
