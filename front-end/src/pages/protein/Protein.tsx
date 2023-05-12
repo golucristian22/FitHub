@@ -12,7 +12,11 @@ function ProteinPage() {
   return (
     <>
       <Nav />
-      <Pagination pages={5}/>
+      <Filters pagination={<Pagination pages={3}/>}>
+        <Filter />
+        <Filter />
+        <Filter />
+      </Filters>
       <Products>
         <>
           {[...Array(8)].map((product, index) => {
@@ -29,15 +33,6 @@ function ProteinPage() {
           })}
         </>
       </Products >
-      <Filters
-        filter={
-          <>
-            <Filter />
-            <Filter />
-            <Filter />
-          </>
-        }
-      />
       <Footer />
     </>
   );

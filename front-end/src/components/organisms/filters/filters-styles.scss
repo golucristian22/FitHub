@@ -1,11 +1,18 @@
 .filters {
+  display: flex;
+  justify-content: space-between;
+
   &__filters {
     display: flex;
     gap: 12px;
-    width: 100%;
 
     .filter {
       max-width: 245px;
     }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: flex-end;
   }
 }
