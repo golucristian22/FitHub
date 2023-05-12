@@ -13,9 +13,22 @@ function ProteinPage() {
     <>
       <Nav />
       <Filters pagination={<Pagination pages={3}/>}>
-        <Filter />
-        <Filter />
-        <Filter />
+        <Filter title="Relevance">
+          <>Popularity</>
+          <>Reviews</>
+          <>Alphabetically</>
+          <>Newest</>
+        </Filter>
+        <Filter title="Flavour">
+          <>Chocolate</>
+          <>Bannana & Dark Chocolate</>
+          <>Vanilla</>
+          <>Cookie</>
+        </Filter>
+        <Filter title="Price">
+          <>Ascending</>
+          <>Descending</>
+        </Filter>
       </Filters>
       <Products>
         <>
