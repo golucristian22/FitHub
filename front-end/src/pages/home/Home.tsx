@@ -137,8 +137,8 @@ function HomePage() {
           <ProductCategory
             href="/"
             src={vitaminsCategoryPhoto}
-            alt="Protein"
-            title="Protein"
+            alt="Vitamins"
+            title="Vitamins"
             buttonText="SHOP NOW"
           />
         }
@@ -146,8 +146,8 @@ function HomePage() {
           <ProductCategory
             href="/"
             src={snacksCategoryPhoto}
-            alt="Clothing"
-            title="Clothing"
+            alt="Snacks"
+            title="Snacks"
             buttonText="SHOP NOW"
           />
         }
