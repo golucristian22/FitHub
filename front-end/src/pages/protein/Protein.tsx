@@ -15,6 +15,9 @@ function ProteinPage() {
   return (
     <>
       <Nav />
+      <a className="h1 text-color-primary" href="/protein/product/1">
+        Product
+      </a>
       <CurrentPage.Provider value={{ currentPage, setCurrentPage }}>
         <Filters pagination={<Pagination pages={3} />}>
           <Filter title="Relevance">
