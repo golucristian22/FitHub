@@ -1,20 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./pagination-block-styles.scss";
 
-
-interface paginationBlockDefaultProperties {
+interface paginationBlockProperties {
   variant: "default" | "disabled";
   state?: boolean;
   onClick?: any;
   text?: string;
   icon?: React.ReactNode;
 }
-
-type paginationBlockApointVariantProperties = 
-  | {isApoint?: false; apointDirection?: "forward" | "backward"}
-  | {isApoint: true; apointDirection: "forward" | "backward"}
-
-type paginationBlockProperties = paginationBlockDefaultProperties & paginationBlockApointVariantProperties;
 
 function PaginationBlock(props: paginationBlockProperties) {
   const [isSelected, setIsSelected] = useState(props.state);
@@ -34,23 +27,7 @@ function PaginationBlock(props: paginationBlockProperties) {
   );
 
   function onPaginationBlockClick(): void {
-    if(props.isApoint && props.apointDirection && props.variant !== "disabled") {
-      dispatchApointDirectionEvent();
-    } else {
-      props.onClick();
-    }
-  }
-
-  function dispatchApointDirectionEvent(): void {
-    const event = new CustomEvent("apointDirectionClickEvent", {
-      detail: {
-        direction: props.apointDirection,
-      },
-      composed: true,
-      bubbles: true,
-    })
-
-    document.dispatchEvent(event);
+    props.onClick();
   }
 }
 

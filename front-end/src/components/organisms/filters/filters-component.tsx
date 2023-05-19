@@ -2,7 +2,7 @@ import React from "react";
 import "./filters-styles.scss";
 
 interface filtersPropertiesInterface {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   pagination?: React.ReactNode;
 }
 
