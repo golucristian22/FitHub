@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./accordion-styles.scss";
 import Icon from "../../atoms/icon/icon-component";
 
 interface accordionPropertiesInterface {
+  isOpen?: boolean;
   mainTitle: string;
   secondTitle?: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
 function Accordion(props: accordionPropertiesInterface) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(props.isOpen);
+
+  useEffect(() => {
+    setIsOpen(props.isOpen);
+  }, [props.isOpen]);
 
   return (
     <div className={`accordion ${isOpen ? "accordion--open" : ""}`}>
@@ -25,7 +31,11 @@ function Accordion(props: accordionPropertiesInterface) {
   );
 
   function onAccordionClick() {
-    setIsOpen(!isOpen);
+    if (props.onClick) {
+      props.onClick();
+    } else {
+      setIsOpen(!isOpen);
+    }
   }
 }
 
