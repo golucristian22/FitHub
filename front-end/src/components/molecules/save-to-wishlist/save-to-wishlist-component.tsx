@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Icon from "../../atoms/icon/icon-component";
 import "./save-to-wishlist-styles.scss";
 
-function SaveToWishList() {
+function SaveToWishlist() {
   const [isSelected, setIsSelected] = useState(false);
 
   return (
@@ -21,4 +21,4 @@ function SaveToWishList() {
   );
 }
 
-export default SaveToWishList;
+export default SaveToWishlist;
