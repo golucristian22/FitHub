@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./pagination-block-styles.scss";
+import "./block-styles.scss";
 
-interface paginationBlockProperties {
+interface blockProperties {
   variant: "default" | "disabled";
   state?: boolean;
   onClick?: any;
@@ -9,7 +9,7 @@ interface paginationBlockProperties {
   icon?: React.ReactNode;
 }
 
-function PaginationBlock(props: paginationBlockProperties) {
+function Block(props: blockProperties) {
   const [isSelected, setIsSelected] = useState(props.state);
 
   useEffect(() => {
@@ -31,4 +31,4 @@ function PaginationBlock(props: paginationBlockProperties) {
   }
 }
 
-export default PaginationBlock;
+export default Block;
