@@ -18,7 +18,7 @@ function Block(props: blockProperties) {
 
   return (
     <div 
-      className={`pagination-block ${isSelected ? "pagination-block--selected" : ""} ${props.variant === "disabled" ? "pagination-block--disabled" : ""} `}
+      className={`block ${isSelected ? "block--selected" : ""} ${props.variant === "disabled" ? "block--disabled" : ""} `}
       onClick={onPaginationBlockClick}
     >
       {props.text ? <h5>{props.text}</h5> : ""}
