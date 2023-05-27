@@ -4,7 +4,7 @@ import "./block-styles.scss";
 interface blockProperties {
   variant: "default" | "disabled";
   state?: boolean;
-  onClick?: any;
+  onClick?: () => void;
   text?: string;
   icon?: React.ReactNode;
 }
@@ -27,6 +27,7 @@ function Block(props: blockProperties) {
   );
 
   function onPaginationBlockClick(): void {
+    if(!props.onClick) return;
     props.onClick();
   }
 }
