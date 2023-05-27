@@ -1,0 +1,10 @@
+.title-and-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__child {
+    display: flex;
+    gap: 20px;
+  }
+}
