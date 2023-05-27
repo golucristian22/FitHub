@@ -12,7 +12,7 @@ function SaveToWishlist() {
     >
       <Icon
         iconName={isSelected ? "heart-filled" : "heart"}
-        iconColor="var(--color-accent-secondary"
+        iconColor="var(--color-accent-secondary)"
         iconHeight="30px"
         iconWidth="30px"
       />
