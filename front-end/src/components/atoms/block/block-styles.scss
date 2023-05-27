@@ -18,4 +18,10 @@
     cursor: none;
     background-color: var(--color-accent-secondary);
   }
+
+  &--responsive {
+    width: fit-content;
+    height: fit-content;
+    padding: 14px;
+  }
 }

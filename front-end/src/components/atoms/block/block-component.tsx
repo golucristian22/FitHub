@@ -4,6 +4,7 @@ import "./block-styles.scss";
 interface blockProperties {
   variant: "default" | "disabled";
   state?: boolean;
+  isResponsive?: boolean;
   onClick?: () => void;
   text?: string;
   icon?: React.ReactNode;
@@ -18,7 +19,7 @@ function Block(props: blockProperties) {
 
   return (
     <div 
-      className={`block ${isSelected ? "block--selected" : ""} ${props.variant === "disabled" ? "block--disabled" : ""} `}
+      className={`block ${isSelected ? "block--selected" : ""} ${props.variant === "disabled" ? "block--disabled" : ""} ${props.isResponsive ? "block--responsive" : ""}`}
       onClick={onPaginationBlockClick}
     >
       {props.text ? <h5>{props.text}</h5> : ""}
