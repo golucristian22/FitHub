@@ -1,0 +1,21 @@
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__counter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .filter {
+    max-width: 245px;
+  }
+}
