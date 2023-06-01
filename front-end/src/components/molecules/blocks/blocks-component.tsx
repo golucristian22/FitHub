@@ -12,7 +12,6 @@ function Blocks(props: blocksProperties) {
     <div className="blocks">
       {React.Children.map(props.children, (child, index) =>
         cloneElement(child, {
-          variant: "default",
           state: index === currentSelectedBlockIndex,
           onClick: () => setCurrentSelectedIndex(index),
         })
