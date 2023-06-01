@@ -17,7 +17,7 @@ function ProductContent(props: productContentProperties) {
     <div className="product-content">
       <div className="product-content__header">
         <h3 className="header__title">{props.title}</h3>
-        <p className="header__description h4 text-color-secondary">{props.description}</p>
+        <p className="header__description h4 text-color-tertiary">{props.description}</p>
       </div>
       <div className="product-content__main">
         {props.children}        
