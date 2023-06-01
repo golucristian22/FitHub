@@ -1,12 +1,12 @@
 .product-content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
 
   &__main {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
   }
 
   &__counter {
@@ -17,5 +17,15 @@
 
   .filter {
     max-width: 245px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-content {
+    gap: 32px;
+
+    &__main {
+      gap: 32px;
+    }
   }
 }
