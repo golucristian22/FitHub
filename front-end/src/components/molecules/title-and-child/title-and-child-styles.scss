@@ -2,10 +2,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  &__child {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
 }
