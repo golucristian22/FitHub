@@ -20,7 +20,7 @@ function ProteinProduct(props: proteinProductInterface) {
             alt="placeholder"
           />
         </div>
-        <div className="protein-product__accordions">{props.children}</div>
+        <div className="protein-product__accordions protein-product__accordions--desktop">{props.children}</div>
       </div>
       <div className="protein-product__right-content">
         <ProductContent title="Product Title" description="Product Description" price="19.99$">
@@ -39,6 +39,7 @@ function ProteinProduct(props: proteinProductInterface) {
             <Block variant="default" text="5kg" isResponsive />
           </TitleAndChild>
         </ProductContent>
+        <div className="protein-product__accordions protein-product__accordions--mobile">{props.children}</div>
       </div>
     </section>
   );
