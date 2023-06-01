@@ -5,6 +5,7 @@
 
   &__child {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 }
