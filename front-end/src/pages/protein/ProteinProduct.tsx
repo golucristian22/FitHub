@@ -9,9 +9,6 @@ function ProteinProductPage() {
   return (
     <>
       <Nav />
-      <a className="text-color-primary" href="/protein">
-        <h2>Get Back</h2>
-      </a>
       <ProteinProduct imageSrc="https://via.placeholder.com/400x600" imageAlt="placeholder">
         <Accordions>
           <Accordion
