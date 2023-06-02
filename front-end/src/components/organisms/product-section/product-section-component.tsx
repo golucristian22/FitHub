@@ -1,5 +1,5 @@
 import React from "react";
-import "./protein-product-styles.scss";
+import "./product-section-styles.scss";
 import ProductContent from "../../molecules/product-content/product-content-component";
 import TitleAndChild from "../../molecules/title-and-child/title-and-child-component";
 import Filter from "../../molecules/filter/filter-component";
@@ -12,22 +12,22 @@ interface proteinProductInterface {
   children: React.ReactNode;
 }
 
-function ProteinProduct(props: proteinProductInterface) {
+function ProductSection(props: proteinProductInterface) {
   return (
-    <section className="protein-product">
-      <div className="protein-product__left-content">
-        <div className="protein-product__image-container">
+    <section className="product-section">
+      <div className="product-section__left-content">
+        <div className="product-section__image-container">
           <img
-            className="protein-product__image"
+            className="product-section__image"
             src={props.imageSrc}
             alt={props.imageAlt}
           />
         </div>
-        <div className="protein-product__accordions protein-product__accordions--desktop">
+        <div className="product-section__accordions product-section__accordions--desktop">
           {props.children}
         </div>
       </div>
-      <div className="protein-product__right-content">
+      <div className="product-section__right-content">
         <ProductContent
           title="Product Title"
           description="Product Description"
@@ -50,7 +50,7 @@ function ProteinProduct(props: proteinProductInterface) {
             </Blocks>
           </TitleAndChild>
         </ProductContent>
-        <div className="protein-product__accordions protein-product__accordions--mobile">
+        <div className="product-section__accordions product-section__accordions--mobile">
           {props.children}
         </div>
       </div>
@@ -58,4 +58,4 @@ function ProteinProduct(props: proteinProductInterface) {
   );
 }
 
-export default ProteinProduct;
+export default ProductSection;

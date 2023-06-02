@@ -1,4 +1,4 @@
-.protein-product {
+.product-section {
   flex-direction: column;
 
   &__left-content,
@@ -45,7 +45,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .protein-product {
+  .product-section {
     flex-direction: row;
 
     &__image-container {
@@ -65,7 +65,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .protein-product {
+  .product-section {
     &__right-content {
       height: fit-content;
       position: sticky;
