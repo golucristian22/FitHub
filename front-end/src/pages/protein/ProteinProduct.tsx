@@ -12,7 +12,7 @@ function ProteinProductPage() {
       <a className="text-color-primary" href="/protein">
         <h2>Get Back</h2>
       </a>
-      <ProteinProduct>
+      <ProteinProduct imageSrc="https://via.placeholder.com/400x600" imageAlt="placeholder">
         <Accordions>
           <Accordion
             mainTitle="Whey Protein"

@@ -7,6 +7,8 @@ import Block from "../../atoms/block/block-component";
 import Blocks from "../../molecules/blocks/blocks-component";
 
 interface proteinProductInterface {
+  imageSrc: string;
+  imageAlt: string;
   children: React.ReactNode;
 }
 
@@ -17,8 +19,8 @@ function ProteinProduct(props: proteinProductInterface) {
         <div className="protein-product__image-container">
           <img
             className="protein-product__image"
-            src="https://via.placeholder.com/590x600"
-            alt="placeholder"
+            src={props.imageSrc}
+            alt={props.imageAlt}
           />
         </div>
         <div className="protein-product__accordions protein-product__accordions--desktop">
