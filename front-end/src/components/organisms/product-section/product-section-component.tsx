@@ -1,15 +1,11 @@
 import React from "react";
 import "./product-section-styles.scss";
-import ProductContent from "../../molecules/product-content/product-content-component";
-import TitleAndChild from "../../molecules/title-and-child/title-and-child-component";
-import Filter from "../../molecules/filter/filter-component";
-import Block from "../../atoms/block/block-component";
-import Blocks from "../../molecules/blocks/blocks-component";
 
 interface proteinProductInterface {
   imageSrc: string;
   imageAlt: string;
-  children: React.ReactNode;
+  children: React.ReactElement;
+  productContent: React.ReactElement;
 }
 
 function ProductSection(props: proteinProductInterface) {
@@ -28,28 +24,7 @@ function ProductSection(props: proteinProductInterface) {
         </div>
       </div>
       <div className="product-section__right-content">
-        <ProductContent
-          title="Product Title"
-          description="Product Description"
-          price="19.99$"
-        >
-          <TitleAndChild title={<h4>Flavour:</h4>}>
-            <Filter title="Unflavored">
-              <>Unflavored</>
-              <>Chocolate</>
-              <>White Chocolate</>
-            </Filter>
-          </TitleAndChild>
-          <TitleAndChild title={<h4>Amount:</h4>}>
-            <Blocks>
-              <Block variant="default" text="250g" isResponsive />
-              <Block variant="default" text="500g" isResponsive />
-              <Block variant="default" text="1kg" isResponsive />
-              <Block variant="default" text="2.5kg" isResponsive />
-              <Block variant="default" text="5kg" isResponsive />
-            </Blocks>
-          </TitleAndChild>
-        </ProductContent>
+        {props.productContent}
         <div className="product-section__accordions product-section__accordions--mobile">
           {props.children}
         </div>
