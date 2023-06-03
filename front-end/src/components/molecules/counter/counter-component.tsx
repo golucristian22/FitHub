@@ -8,7 +8,7 @@ function Counter() {
     <div className="counter">
       <Block variant={number <= 1 ? "disabled" : "default"} text="-" onClick={() => setNumber(number - 1)} />
       <h4 className="counter__number">{number}</h4>
-      <Block variant={number >= 10 ? "disabled" : "default"} text="+" onClick={() => setNumber(number + 1)} state={true}/>
+      <Block variant={number >= 10 ? "disabled" : "default"} text="+" onClick={() => setNumber(number + 1)} />
     </div>
   );
 }
